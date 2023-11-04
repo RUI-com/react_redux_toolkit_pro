@@ -1,0 +1,120 @@
+
+
+body{
+
+  background: url('./image/R2.jpg') no-repeat center center fixed;
+  
+  
+ 
+  
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+ 
+}
+.App {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+
+
+.backgrounddiv{
+  background: linear-gradient(to right,#5303bdf5,#dd1fffe7);
+  padding: 15px 32px;
+  border-radius: 20px;
+  font-family: 'Cooper';
+
+}
+h1{
+ 
+  padding: 15px 32px;
+  border-radius: 20px;
+  color:white;
+
+}
+.counter{
+  font-size: 30px; 
+  font-family: 'Stencil';
+  color: white;
+}
+.swit{
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 20px 60px;
+  border: 20px;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  background: linear-gradient(to right,#00ffa3,#dc1fff);
+  cursor: pointer;
+  color: linear-gradient(to left,#00ffa3,#dc1fff);
+ 
+
+}
+.log{
+  background: white ;
+  color: #dc1fff ;
+  border: none;
+  font-size: 30px ;
+    border-radius: 50px;
+      margin-top: 10px;
+  margin-left: 10px;
+  padding: 20px 60px;
+  cursor: pointer;
+  transition: 1s;
+   font-family: 'Stencil';
+}
+.log:hover{
+  background: linear-gradient(to left,#00ffa3,#dc1fff) ;
+  color: white ;
+}
+.swit::before{
+  content: '';
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  border-radius: 20px;
+  background-color: white;
+  z-index:-1;
+  transition: 200ms;
+}
+.swit::after{
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(to left,#00ffa3,#dc1fff);
+ 
+  color: transparent;
+  transition: 200ms;
+  -webkit-background-clip: text;
+  z-index: -1;
+}
+.swit:hover:before{
+  opacity: 50%;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+}
+.swit::after:hover{
+  color: white;
+}
+.swit{
+  padding: 10px 30px !important;
+  font-size: 40px;
+  color: #dc1fff;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 20px 60px;
+}
